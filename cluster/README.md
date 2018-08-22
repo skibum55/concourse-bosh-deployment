@@ -21,7 +21,7 @@ bosh -e $BOSH_ENVIRONMENT deploy -d concourse concourse.yml \
   -l ../versions.yml \
   --vars-store cluster-creds.yml \
   -o operations/static-web.yml \
-  -o operations/no-auth.yml \
+  -o operations/basic-auth.yml \
   --var web_ip=10.244.15.2 \
   --var external_url=http://10.244.15.2:8080 \
   --var network_name=concourse \
